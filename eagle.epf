@@ -1,0 +1,33 @@
+[Eagle]
+Version="09 06 02"
+Platform="Linux"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/LilyPad-Wearables.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Aesthetics.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-AnalogIC.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Boards.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Connectors.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-DigitalIC.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Displays.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Electromechanical.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-FreqCtrl.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-LED.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Passives.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-PowerIC.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
+UsedLibrary="/storage/big1/kdb/eagle/lbr/BIG.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="3840 1200"
+Window="Win_1"
