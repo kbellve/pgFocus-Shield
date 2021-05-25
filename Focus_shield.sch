@@ -7315,80 +7315,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
-<library name="con-coax">
-<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
-Radiall  and M/A COM.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="B35N57">
-<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
-M/A COM&lt;p&gt;
-www.macom.com</description>
-<wire x1="-8.49" y1="-8.54" x2="8.49" y2="-8.54" width="0.254" layer="21"/>
-<wire x1="8.54" y1="-8.49" x2="8.54" y2="8.49" width="0.254" layer="21"/>
-<wire x1="8.49" y1="8.54" x2="-8.49" y2="8.54" width="0.254" layer="21"/>
-<wire x1="-8.54" y1="8.49" x2="-8.54" y2="-8.49" width="0.254" layer="21"/>
-<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.3048" layer="51" curve="-143.130102"/>
-<wire x1="-1.5" y1="-0.5" x2="1.5" y2="-0.5" width="0.3048" layer="51" curve="143.130102"/>
-<wire x1="-4.572" y1="1.016" x2="-5.461" y2="1.016" width="0.254" layer="21"/>
-<wire x1="-5.461" y1="1.016" x2="-5.461" y2="-1.016" width="0.254" layer="21"/>
-<wire x1="-5.461" y1="-1.016" x2="-4.572" y2="-1.016" width="0.254" layer="21"/>
-<wire x1="4.572" y1="-1.016" x2="5.461" y2="-1.016" width="0.254" layer="21"/>
-<wire x1="5.461" y1="-1.016" x2="5.461" y2="1.016" width="0.254" layer="21"/>
-<wire x1="5.461" y1="1.016" x2="4.572" y2="1.016" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="4.5961" width="0.254" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.7"/>
-<pad name="2" x="6.35" y="6.35" drill="1.7"/>
-<pad name="3" x="-6.35" y="6.35" drill="1.7"/>
-<pad name="4" x="-6.35" y="-6.35" drill="1.7"/>
-<pad name="5" x="6.35" y="-6.35" drill="1.7"/>
-<text x="-7.62" y="8.89" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-2.54" y="-6.35" size="0.6096" layer="51">B35 N57</text>
-</package>
-</packages>
-<symbols>
-<symbol name="BU-BNC">
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0.254" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="0.254" x2="-0.508" y2="0" width="0.254" layer="94"/>
-<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="B35N57" prefix="X">
-<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
-M/A COM&lt;p&gt;
-www.macom.com</description>
-<gates>
-<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="B35N57">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2 3 4 5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
@@ -7414,6 +7340,100 @@ We've spent an enormous amount of time creating and checking these footprints an
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-coax" urn="urn:adsk.eagle:library:133">
+<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
+Radiall  and M/A COM.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B35N61" urn="urn:adsk.eagle:footprint:6172/1" library_version="2">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
+<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.3048" layer="21" curve="-143.130102"/>
+<wire x1="-1.5" y1="-0.5" x2="1.5" y2="-0.5" width="0.3048" layer="21" curve="143.130102"/>
+<wire x1="-4.572" y1="1.016" x2="-5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="1.016" x2="-5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="-1.016" x2="-4.572" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="4.572" y1="-1.016" x2="5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="-1.016" x2="5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="1.016" x2="4.572" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-4.1" y1="2.1" x2="-2.1" y2="4.1" width="0.254" layer="51" curve="-35.757393"/>
+<wire x1="-4.1" y1="-2.1" x2="-4.1" y2="2.1" width="0.254" layer="21" curve="-54.242607"/>
+<wire x1="-4.1" y1="-2.1" x2="-2.1" y2="-4.1" width="0.254" layer="51" curve="35.757393"/>
+<wire x1="-2.1" y1="-4.1" x2="2.1" y2="-4.1" width="0.254" layer="21" curve="54.242607"/>
+<wire x1="2.1" y1="-4.1" x2="4.1" y2="-2.1" width="0.254" layer="51" curve="35.757393"/>
+<wire x1="4.1" y1="2.1" x2="4.1" y2="-2.1" width="0.254" layer="21" curve="-54.242607"/>
+<wire x1="2.1" y1="4.1" x2="4.1" y2="2.1" width="0.254" layer="51" curve="-35.757393"/>
+<wire x1="-2.1" y1="4.1" x2="2.1" y2="4.1" width="0.254" layer="21" curve="-54.242607"/>
+<pad name="1" x="0" y="0" drill="1.2"/>
+<pad name="2" x="3.0988" y="3.0988" drill="1.3"/>
+<pad name="3" x="-3.0988" y="3.0988" drill="1.3"/>
+<pad name="4" x="-3.0988" y="-3.0988" drill="1.3"/>
+<pad name="5" x="3.0988" y="-3.0988" drill="1.3"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="0.6096" layer="51">B35 N61</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="B35N61" urn="urn:adsk.eagle:package:6201/1" type="box" library_version="2">
+<description>BNC CONNECTOR
+M/A COM
+www.macom.com
+distributor Farnell 149-452</description>
+<packageinstances>
+<packageinstance name="B35N61"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="BU-BNC" urn="urn:adsk.eagle:symbol:6169/1" library_version="2">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.254" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.254" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BN35N61" urn="urn:adsk.eagle:component:6225/2" prefix="X" library_version="2">
+<description>&lt;b&gt;BNC CONNECTOR&lt;/b&gt;&lt;p&gt;
+M/A COM&lt;p&gt;
+www.macom.com&lt;p&gt;
+distributor Farnell 149-452</description>
+<gates>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B35N61">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 3 4 5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6201/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7523,7 +7543,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="SUPPLY10" library="supply1" deviceset="-12V" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$1" library="BIG" deviceset="AD5331" device="" value="AD5531"/>
+<part name="AD5331" library="BIG" deviceset="AD5331" device="" value="AD5531"/>
 <part name="GND50" library="supply1" deviceset="AGND" device=""/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND51" library="SparkFun" deviceset="GND" device=""/>
@@ -7537,8 +7557,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_SHIELD" device="NOHOLES"/>
 <part name="SUPPLY14" library="supply2" deviceset="+5V" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
-<part name="BNC-OUT" library="con-coax" deviceset="B35N57" device=""/>
-<part name="BNC-IN" library="con-coax" deviceset="B35N57" device=""/>
+<part name="BNC-OUT" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BN35N61" device="" package3d_urn="urn:adsk.eagle:package:6201/1"/>
+<part name="BNC-IN" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BN35N61" device="" package3d_urn="urn:adsk.eagle:package:6201/1"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7554,7 +7574,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="93.98" y="45.72" size="1.27" layer="91">fc = 15.9kHz (Caps = 1000pF)</text>
 <text x="91.44" y="35.306" size="1.778" layer="91">Karl Bellve, Biomedical Imaging Group</text>
 <text x="91.44" y="32.512" size="1.778" layer="91">University of Massachusetts Medical School</text>
-<text x="91.44" y="29.718" size="1.778" layer="91">Copyright 2013</text>
+<text x="91.44" y="29.718" size="1.778" layer="91">Copyright 2021</text>
 <text x="12.7" y="160.02" size="1.778" layer="91">AD7894-10</text>
 <text x="-17.78" y="154.94" size="1.778" layer="91">5kHz RC Low-pass</text>
 <text x="27.94" y="119.38" size="1.27" layer="91">Gain of 2 for AD7894-10</text>
@@ -7896,7 +7916,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND18" gate="1" x="-30.48" y="129.54" smashed="yes">
 <attribute name="VALUE" x="-33.02" y="127" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-7.62" y="35.56" smashed="yes"/>
+<instance part="AD5331" gate="G$1" x="-7.62" y="35.56" smashed="yes"/>
 <instance part="GND50" gate="VR1" x="2.54" y="40.64" smashed="yes" rot="R90">
 <attribute name="VALUE" x="7.62" y="38.1" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -7987,12 +8007,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="LDAC"/>
+<pinref part="AD5331" gate="G$1" pin="LDAC"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-40.64" y1="40.64" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="REFAGND"/>
+<pinref part="AD5331" gate="G$1" pin="REFAGND"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <wire x1="-40.64" y1="45.72" x2="-15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
@@ -8148,15 +8168,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="AD5331" gate="G$1" pin="GND"/>
 <pinref part="GND14" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="DUTGND"/>
+<pinref part="AD5331" gate="G$1" pin="DUTGND"/>
 <pinref part="GND50" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="SDO"/>
+<pinref part="AD5331" gate="G$1" pin="SDO"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8208,7 +8228,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="SUPPLY10" gate="1" pin="-12V"/>
 <junction x="17.78" y="38.1"/>
 <wire x1="17.78" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
+<pinref part="AD5331" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
@@ -8259,7 +8279,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="-15.24" y1="30.48" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
 <label x="-35.56" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SCLK"/>
+<pinref part="AD5331" gate="G$1" pin="SCLK"/>
 </segment>
 <segment>
 <wire x1="-5.08" y1="180.34" x2="-7.62" y2="180.34" width="0.1524" layer="91"/>
@@ -8318,7 +8338,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="30.48" y1="48.26" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="VOUT"/>
+<pinref part="AD5331" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -8445,7 +8465,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="SENSOR" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="RBEN"/>
+<pinref part="AD5331" gate="G$1" pin="RBEN"/>
 <pinref part="SUPPLY21" gate="+5V" pin="+5V"/>
 <wire x1="-15.24" y1="33.02" x2="-50.8" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="33.02" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
@@ -8460,7 +8480,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="-15.24" y1="43.18" x2="-25.4" y2="43.18" width="0.1524" layer="91"/>
 <label x="-40.64" y="43.18" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="REFIN"/>
+<pinref part="AD5331" gate="G$1" pin="REFIN"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
@@ -8493,7 +8513,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="-15.24" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
 <label x="-35.56" y="35.56" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SYNC"/>
+<pinref part="AD5331" gate="G$1" pin="SYNC"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="160.02" x2="106.68" y2="160.02" width="0.1524" layer="91"/>
@@ -8594,7 +8614,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="-15.24" y1="38.1" x2="-25.4" y2="38.1" width="0.1524" layer="91"/>
 <label x="-35.56" y="38.1" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SDIN"/>
+<pinref part="AD5331" gate="G$1" pin="SDIN"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="180.34" x2="25.4" y2="180.34" width="0.1524" layer="91"/>
@@ -8655,7 +8675,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="0" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
 <label x="5.08" y="27.94" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="CLR"/>
+<pinref part="AD5331" gate="G$1" pin="CLR"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="165.1" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
@@ -8674,7 +8694,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="0" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <label x="5.08" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="PD"/>
+<pinref part="AD5331" gate="G$1" pin="PD"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="162.56" x2="106.68" y2="162.56" width="0.1524" layer="91"/>
@@ -8745,7 +8765,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="17.78" y1="60.96" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C40" gate="G$1" pin="2"/>
 <wire x1="0" y1="60.96" x2="0" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="AD5331" gate="G$1" pin="VDD"/>
 <wire x1="10.16" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
 <junction x="10.16" y="60.96"/>
 </segment>
@@ -8836,4 +8856,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
